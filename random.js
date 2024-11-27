@@ -1,28 +1,13 @@
-function
-getRandomInt(max)
-return
-{
-Math.floor(Math.random()
-*
-max)
-+
-1;
+function getRandomInt(max) {
+    return Math.floor(Math.random() * max) + 1;
 }
-function
-let
-generateRandom()
-max
-=
-{
-document.getElementById('max').value;
-alert(getRandomInt(max));
+
+function generateRandom() {
+    let max = document.getElementById('max').value;
+
+    alert(getRandomInt(max));
 }
-let
-button
-=
-document.querySelector('button');
-button.addEventListener('click',
-button.disabled
-=
-generateRandom);
-false;
+
+let button = document.querySelector('button');
+button.addEventListener('click', generateRandom);
+button.disabled = false;
